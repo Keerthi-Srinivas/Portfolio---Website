@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #4facfe);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+    0% {background-position: 0%}
+    50% {background-position: 100%}
+    100% {background-position: 0%}
+}
+
+/* Light Mode */
+.light-mode {
+    background: white;
+    color: black;
+}
+
+.light-mode nav {
+    background: #eee;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.theme-btn {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.profile-img {
+    width: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 20px #fff;
+}
+
+/* Buttons */
+.hero button {
+    margin: 10px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.resume-btn {
+    background: #4facfe;
+    color: white;
+}
+
+/* Cards */
+.card {
+    margin: 20px;
+    padding: 25px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+/* Skills */
+.skill {
+    margin: 10px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #ffffff30;
+    border-radius: 10px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+    animation: load 2s ease;
+}
+
+.html { width: 90%; background: #ff6ec4; }
+.css { width: 85%; background: #4facfe; }
+.js { width: 80%; background: #fbc531; }
+
+@keyframes load {
+    from {width: 0;}
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #ff6ec4;
+}
+
+.project-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Social */
+.socials a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}

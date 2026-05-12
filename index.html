@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keerthi Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2 class="logo">Keerthi</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleTheme()" class="theme-btn">🌙</button>
+</nav>
+
+<section class="hero">
+    <img src="photo.png" class="profile-img">
+    <h1>I am <span class="typing"></span></h1>
+    <p>Creative Developer | Problem Solver</p>
+
+    <button onclick="showMessage()">Hire Me</button>
+
+    <a href="resume.pdf" download>
+        <button class="resume-btn">Download Resume</button>
+    </a>
+</section>
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Final year BTech student passionate about Web Development, Cybersecurity, and building impactful applications.</p>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="fill html"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="fill css"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="fill js"></div></div>
+    </div>
+
+</section>
+
+<section id="projects" class="card">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-box">
+            <img src="project1.jpg">
+            <h3>Portfolio Website</h3>
+        </div>
+
+        <div class="project-box">
+            <img src="project2.jpg">
+            <h3>Python App</h3>
+        </div>
+
+        <div class="project-box">
+            <img src="project3.jpg">
+            <h3>Cyber Tool</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Keerthi Srinivas</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
